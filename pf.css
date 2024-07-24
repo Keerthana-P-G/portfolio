@@ -99,6 +99,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+    
 }
 
 .about-content h2 {
@@ -138,6 +139,7 @@ main {
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
     background-color: lightgray;
     padding: 20px;
     border-radius: 8px;
@@ -369,3 +371,33 @@ ul li {
     margin-top: 10px;
     color: #333;
 }
+
+.project-card {
+    margin-bottom: 20px;
+    height:300px;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    margin-right: 15px;
+    transition: opacity 0.3s ease;  /* Adjust as needed */
+}
+.project-card:hover .project-image {
+    opacity: 0; /* Make the image invisible on hover */
+}
+/* .about-content .top-right-image {
+    position: absolute;
+    top: -30px;/* Adjust top position as needed */
+    right: -120px; /* Adjust right position to move the image outside the grid */
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
