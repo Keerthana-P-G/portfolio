@@ -1,12 +1,10 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;700&display=swap');
 
-/* Base Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    background-color: lightgray; /* Updated background color */
+    background-color: lightgray; 
 }
 
 .container {
@@ -14,31 +12,29 @@ body {
     width: 100%;
 }
 
-/* Horizontal Navbar Styles */
 header.horizontal-navbar {
-    width: calc(100% - 200px); /* Adjust width to account for sidebar */
+    width: calc(100% - 200px);
     background: #0e2431;
     color: white;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     position: fixed;
     top: 0;
-    left: 200px; /* Position right of the sidebar */
+    left: 200px;
     z-index: 1000;
 }
 
 header .name {
     font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
-/* Sidebar Styles */
 nav.sidebar {
     background: #0e2431;
     color: white;
     width: 200px;
     height: 100vh;
-    padding: 50px 10px 10px;; /* To account for fixed header */
+    padding: 50px 10px 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,24 +69,23 @@ nav.sidebar ul li a:hover {
     background: #4070f4;
 }
 
-/* Main Content Styles */
 main {
-    margin-left: 220px; /* To account for sidebar width */
-    padding: 60px 20px 20px; /* To account for fixed header */
+    margin-left: 220px; 
+    padding: 60px 20px 20px; 
     flex-grow: 1;
 }
+.home-text p{
+    font-size: 25px;
+}
 
-
-/* Section Styles */
 .section {
-    height: 100vh; /* Each section covers the entire viewport height */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-/* About Section Styles */
 #about {
     background-color: #f9f9f9;
     padding: 40px;
@@ -115,7 +110,6 @@ main {
     line-height: 1.6;
 }
 
-/* Home Section Styles */
 .home-content {
     display: flex;
     justify-content: space-between;
@@ -141,8 +135,24 @@ main {
     max-width: 100%;
     height: auto;
 }
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-/* Typography Styles */
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
 h1, h2, h3 {
     color: #0e2431;
 }
@@ -151,7 +161,6 @@ h2 {
     margin-top: 0;
 }
 
-/* List Styles */
 ul {
     list-style: none;
     padding: 0;
@@ -164,7 +173,6 @@ ul li {
     border-radius: 5px;
 }
 
-/* Resume Button Styles */
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
@@ -172,7 +180,7 @@ ul li {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #fff;
-    background-color: #007bff; /* Customize the color */
+    background-color: #007bff; 
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -181,10 +189,9 @@ ul li {
 }
 
 .resume-button:hover {
-    background-color: #0056b3; /* Customize the hover color */
+    background-color: #0056b3; 
 }
 
-/* Grid container for Skills and Certifications */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,10 +199,9 @@ ul li {
     margin-top: 20px;
 }
 
-/* Style for each section in the grid */
 .skills, .certifications {
     padding: 20px;
-    background-color: lightgray; /* Light background color for contrast */
+    background-color: lightgray; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -217,16 +223,14 @@ ul li {
     font-weight: 400;
 }
 
-/* Optional styling for better visuals */
 .skills {
-    border-right: 2px solid #ddd; /* Light divider between columns */
+    border-right: 2px solid #ddd; 
 }
 
 .certifications {
     border-left: 2px solid #ddd;
 }
 
-/* Project Section Styles */
 .projects-section {
     display: flex;
     flex-direction: column;
@@ -248,14 +252,14 @@ ul li {
 
 .project-card {
     flex: 1;
-    background-color: #fff; /* Background color for project cards */
+    background-color: #fff; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Fixed height for consistency */
-    max-width: 33%; /* Ensure three cards fit horizontally */
+    height: 200px; 
+    max-width: 33%;
 }
 
 .project-card:hover {
@@ -279,23 +283,21 @@ ul li {
 
 .project-info p {
     color: black;
-    display: none; /* Hide description initially */
+    display: none;
 }
 
 .project-card:hover .project-info p {
-    display: block; /* Show description on hover */
+    display: block; 
 }
 
-/* Optional: Adjust text color and background for better readability */
 .project-card:hover .project-info {
-    background-color: rgba(124, 79, 79, 0.7); /* Optional overlay on hover */
-    color: #fff; /* Text color on hover */
+    background-color: rgba(124, 79, 79, 0.7);
+    color: #fff; 
 }
 
-/* Contact box styling */
 .contact-header {
     margin-top: 50px;
-    height: 500px; /* Adjust top margin to ensure it’s below the header */
+    height: 500px; 
 }
 
 .contact-box {
@@ -336,59 +338,34 @@ ul li {
 .contact-item a:hover {
     text-decoration: underline;
 }
-/* 
-Timeline Styles
-.timeline {
-    position: relative;
-    padding: 20px 0;
-    max-width: 900px;
-    margin: 0 auto;
-    list-style: none;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    height: 100%;
-    border-left: 2px solid #4070f4;
-    z-index: 1;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 20px 0;
-    padding-left: 40px;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    background-color: #4070f4;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.timeline-item h3 {
-    margin: 0;
-    font-weight: 600;
-    color: #0e2431;
-}
-
-.timeline-item p {
-    margin: 5px 0;
-    color: #666;
-    line-height: 1.6;
-}
-
-.timeline-item:hover {
+.project-card {
     background-color: #f0f0f0;
     border-radius: 8px;
-    padding: 10px;
-} */
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #dcdcdc;
+    transform: scale(1.05);
+}
+
+.project-info h3 {
+    display: flex;
+    align-items: center;
+}
+
+.project-info h3 .project-icon {
+    visibility: hidden;
+    margin-right: 10px;
+    transition: visibility 0.3s;
+}
+
+.project-card:hover .project-icon {
+    visibility: visible;
+}
+
+.project-info p {
+    margin-top: 10px;
+    color: #333;
+}
