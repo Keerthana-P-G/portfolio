@@ -204,8 +204,6 @@ main {
     transition: background-color 0.3s ease;
 }
 
-
-/* Responsive Design */
 @media (max-width: 1024px) {
     header.horizontal-navbar {
         width: calc(100% - 180px);
@@ -258,6 +256,7 @@ main {
         flex-direction: row;
         overflow: auto;
         top: 50px;
+        
     }
 
     nav.sidebar .name {
@@ -320,32 +319,43 @@ main {
     }
 
     nav.sidebar {
-        /* width: 100%;
+        width: 100%;
         height: auto;
         position: fixed;
         padding: 10px 0;
         display: flex;
         flex-direction: row;
         overflow: auto;
-        top: 50px; */
-        flex-direction: column;
-        width: 100%;
         top: 50px;
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-        position: fixed;
+        
+    }
+
+    nav.sidebar .name {
+        display: none;
     }
 
     nav.sidebar ul {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav.sidebar ul li {
+        margin: 0;
     }
 
     .main-content {
+        margin-left: 0;
         padding-top: 50px;
     }
 
     .section {
-        padding: 10px;
+        padding: 20px;
+    }
+
+    .about-content {
+        padding: 20px;
     }
 
     .home-content {
@@ -355,9 +365,7 @@ main {
     .home-text {
         padding: 5px;
     }
-    .home-gif{
-        display: none;
-    }
+
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -366,12 +374,10 @@ main {
         flex-direction: column;
         gap: 20px;
     }
-
+    .home-gif{
+        display: none;
+    }
     .project-card {
         max-width: 100%;
-    }
-
-    .contact-box {
-        padding: 20px;
     }
 }
